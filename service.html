@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>RV-XCelerate</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="" name="keywords">
+    <meta content="" name="description">
+
+    <!-- Favicon -->
+    <link href="icon.png" rel="icon">
+
+     <!-- FOR PUSH NOTIFICATIONS -->
+     <script src="https://cdn.onesignal.com/sdks/web/v16/OneSignalSDK.page.js" defer></script>
+     <script>
+       window.OneSignalDeferred = window.OneSignalDeferred || [];
+       OneSignalDeferred.push(function(OneSignal) {
+         OneSignal.init({
+           appId: "88caf6b2-a4ce-42bc-8e47-5473dbda9d10",
+         });
+       });
+     </script>
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Ubuntu:wght@500;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+
+     
+</head>
+
+<body>
+    <!-- Spinner Start -->
+    <div id="spinner"
+        class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+        <div class="spinner-grow text-primary" style="width: 3rem; height: 3rem;" role="status">
+            <span class="sr-only">Loading...</span>
+        </div>
+    </div>
+    <!-- Spinner End -->
+
+
+    <!-- Navbar Start -->
+    <div class="container-fluid sticky-top">
+        <div class="container">
+            <nav class="navbar navbar-expand-lg navbar-dark p-0">
+                <a href="index.html" class="navbar-brand">
+                    <img class="logo" src="output-onlinepngtools.png" alt="">
+                </a>
+                <button type="button" class="navbar-toggler ms-auto me-0" data-bs-toggle="collapse"
+                    data-bs-target="#navbarCollapse">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarCollapse">
+                    <div class="navbar-nav ms-auto">
+                        <a href="index.html" class="nav-item nav-link active">Home</a>
+                        <a href="about.html" class="nav-item nav-link">About</a>
+                        <a href="service.html" class="nav-item nav-link">Services</a>
+                        <a href="project.html" class="nav-item nav-link">Projects</a>
+                        <a href="contact.html" class="nav-item nav-link">Contact</a>
+                    </div>
+                    <butaton type="button" class="btn text-white p-0 d-none d-lg-block" data-bs-toggle="modal"
+                        data-bs-target="#searchModal"><i class="fa fa-search"></i></butaton>
+                </div>
+            </nav>
+        </div>
+    </div>
+    <!-- Navbar End -->
+
+
+    <!-- Hero Start -->
+    <div class="container-fluid pt-5 bg-primary hero-header">
+        <div class="container pt-5">
+            <div class="row g-5 pt-5">
+                <div class="col-lg-6 align-self-center text-center text-lg-start mb-lg-5">
+                    <h1 class="display-4 text-white mb-4 animated slideInRight">Our Services</h1>
+                    <nav aria-label="breadcrumb">
+                        <ol class="breadcrumb justify-content-center justify-content-lg-start mb-0">
+                            <li class="breadcrumb-item"><a class="text-white" href="#">Home</a></li>
+                            <li class="breadcrumb-item"><a class="text-white" href="#">Pages</a></li>
+                            <li class="breadcrumb-item text-white active" aria-current="page">Our Services</li>
+                        </ol>
+                    </nav>
+                </div>
+                <div class="col-lg-6 align-self-end text-center text-lg-end">
+                    <img class="img-fluid" src="img/hero-img.png" alt="" style="max-height: 300px;">
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Hero End -->
+
+
+    <!-- Full Screen Search Start -->
+    <div class="modal fade" id="searchModal" tabindex="-1">
+        <div class="modal-dialog modal-fullscreen">
+            <div class="modal-content" style="background: rgba(20, 24, 62, 0.7);">
+                <div class="modal-header border-0">
+                    <button type="button" class="btn btn-square bg-white btn-close" data-bs-dismiss="modal"
+                        aria-label="Close"></button>
+                </div>
+                <div class="modal-body d-flex align-items-center justify-content-center">
+                    <div class="input-group" style="max-width: 600px;">
+                        <input type="text" class="form-control bg-transparent border-light p-3"
+                            placeholder="Type search keyword">
+                        <button class="btn btn-light px-4"><i class="bi bi-search"></i></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Full Screen Search End -->
+
+
+    <!-- Feature Start -->
+    <div class="container-fluid bg-primary feature pt-5">
+        <div class="container pt-5">
+            <div class="row g-5">
+                <div class="col-lg-6 align-self-center mb-md-5 pb-md-5 wow fadeIn" data-wow-delay="0.3s">
+                    <div class="btn btn-sm border rounded-pill text-white px-3 mb-3">Our Services</div>
+                    <h1 class="text-white mb-4"> Simplify College Life, Save Time</h1>
+                    <p class="text-light mb-4">Experience seamless integration and AI-powered support for unmatched
+                        college success.</p>
+                    <div class="d-flex align-items-center text-white mb-3">
+                        <div class="btn-sm-square bg-white text-primary rounded-circle me-3">
+                            <i class="fa fa-check"></i>
+                        </div>
+                        <span>Smart chatbot for instant academic support.</span>
+                    </div>
+                    <div class="d-flex align-items-center text-white mb-3">
+                        <div class="btn-sm-square bg-white text-primary rounded-circle me-3">
+                            <i class="fa fa-check"></i>
+                        </div>
+                        <span>Level up college success with RV-Xcelerate</span>
+                    </div>
+                    <div class="d-flex align-items-center text-white mb-3">
+                        <div class="btn-sm-square bg-white text-primary rounded-circle me-3">
+                            <i class="fa fa-check"></i>
+                        </div>
+                        <span>Facial recognition for seamless attendance tracking</span>
+                    </div>
+                    <!-- <div class="row g-4 pt-3">
+                        <div class="col-sm-6">
+                            <div class="d-flex rounded p-3" style="background: rgba(256, 256, 256, 0.1);">
+                                <i class="fa fa-users fa-3x text-white"></i>
+                                <div class="ms-3">
+                                    <h2 class="text-white mb-0" data-toggle="counter-up">24 hrs</h2>
+                                    <p class="text-white mb-0">support for uninterrupted assistance</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="d-flex rounded p-3" style="background: rgba(256, 256, 256, 0.1);">
+                                <i class="fa fa-check fa-3x text-white"></i>
+                                <div class="ms-3">
+                                    <h2 class="text-white mb-0" data-toggle="counter-up">9999</h2>
+                                    <p class="text-white mb-0">Project Complete</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div> -->
+                </div>
+                <div class="col-lg-6 align-self-end text-center text-md-end wow fadeIn" data-wow-delay="0.5s">
+                    <img class="img-fluid" src="img/feature.png" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Feature End -->
+
+
+    <!-- Testimonial Start -->
+    <!-- <div class="container-xxl py-5">
+        <div class="container py-5">
+            <div class="row g-5">
+                <div class="col-lg-5 wow fadeIn" data-wow-delay="0.1s">
+                    <div class="btn btn-sm border rounded-pill text-primary px-3 mb-3">Testimonial</div>
+                    <h1 class="mb-4">What Say Our Clients!</h1>
+                    <p class="mb-4">Tempor erat elitr rebum at clita. Diam dolor diam ipsum et tempor sit. Aliqu diam
+                        amet diam et eos labore. Clita erat ipsum et lorem et sit, sed stet no labore lorem sit. Sanctus
+                        clita duo justo et tempor eirmod magna dolore erat amet</p>
+                    <a class="btn btn-primary rounded-pill px-4" href="">Read More</a>
+                </div>
+                <div class="col-lg-7 wow fadeIn" data-wow-delay="0.5s">
+                    <div class="owl-carousel testimonial-carousel border-start border-primary">
+                        <div class="testimonial-item ps-5">
+                            <i class="fa fa-quote-left fa-2x text-primary mb-3"></i>
+                            <p class="fs-4">Aliqu diam amet diam et eos labore. Clita erat ipsum et lorem et sit, sed stet no labore lorem sit. Sanctus clita duo justo et tempor eirmod magna dolore erat amet</p>
+                            <div class="d-flex align-items-center">
+                                <img class="img-fluid flex-shrink-0 rounded-circle" src="img/testimonial-1.jpg"
+                                    style="width: 60px; height: 60px;">
+                                <div class="ps-3">
+                                    <h5 class="mb-1">Client Name</h5>
+                                    <span>Profession</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="testimonial-item ps-5">
+                            <i class="fa fa-quote-left fa-2x text-primary mb-3"></i>
+                            <p class="fs-4">Aliqu diam amet diam et eos labore. Clita erat ipsum et lorem et sit, sed stet no labore lorem sit. Sanctus clita duo justo et tempor eirmod magna dolore erat amet</p>
+                            <div class="d-flex align-items-center">
+                                <img class="img-fluid flex-shrink-0 rounded-circle" src="img/testimonial-2.jpg"
+                                    style="width: 60px; height: 60px;">
+                                <div class="ps-3">
+                                    <h5 class="mb-1">Client Name</h5>
+                                    <span>Profession</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="testimonial-item ps-5">
+                            <i class="fa fa-quote-left fa-2x text-primary mb-3"></i>
+                            <p class="fs-4">Aliqu diam amet diam et eos labore. Clita erat ipsum et lorem et sit, sed stet no labore lorem sit. Sanctus clita duo justo et tempor eirmod magna dolore erat amet</p>
+                            <div class="d-flex align-items-center">
+                                <img class="img-fluid flex-shrink-0 rounded-circle" src="img/testimonial-3.jpg"
+                                    style="width: 60px; height: 60px;">
+                                <div class="ps-3">
+                                    <h5 class="mb-1">Client Name</h5>
+                                    <span>Profession</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div> -->
+    <!-- Testimonial End -->
+
+
+    <!-- Newsletter Start -->
+    <!-- <div class="container-fluid bg-primary newsletter py-5">
+        <div class="container">
+            <div class="row g-5 align-items-center">
+                <div class="col-md-5 ps-lg-0 pt-5 pt-md-0 text-start wow fadeIn" data-wow-delay="0.3s">
+                    <img class="img-fluid" src="img/newsletter.png" alt="">
+                </div>
+                <div class="col-md-7 py-5 newsletter-text wow fadeIn" data-wow-delay="0.5s">
+                    <div class="btn btn-sm border rounded-pill text-white px-3 mb-3">Newsletter</div>
+                    <h1 class="text-white mb-4">Let's subscribe the newsletter</h1>
+                    <div class="position-relative w-100 mt-3 mb-2">
+                        <input class="form-control border-0 rounded-pill w-100 ps-4 pe-5" type="text"
+                            placeholder="Enter Your Email" style="height: 48px;">
+                        <button type="button" class="btn shadow-none position-absolute top-0 end-0 mt-1 me-2"><i
+                                class="fa fa-paper-plane text-primary fs-4"></i></button>
+                    </div>
+                    <small class="text-white-50">Diam sed sed dolor stet amet eirmod</small>
+                </div>
+            </div>
+        </div>
+    </div> -->
+    <!-- Newsletter End -->
+
+
+    <!-- Footer Start-->
+    <div class="container-fluid bg-dark text-light py-5 wow fadeInUp" data-wow-delay="0.3s" style="margin-top: -75px;">
+        <div class="container pt-5">
+            <div class="row g-5 pt-4">
+
+                <div class="col-lg-3 col-md-6">
+                    <h3 class="text-white mb-4">About Us</h3>
+                    <p>At RV-Xcelerate, we believe in the power of merging technology to create a seamless and efficient experience for our users. Our platform is designed to unify essential functionalities, offering a comprehensive suite of tools that elevate productivity and enable growth.
+
+</p>
+                </div>
+
+
+                <div class="col-lg-3 col-md-6">
+                    <h3 class="text-white mb-4">Quick Links</h3>
+                    <div class="d-flex flex-column justify-content-start">
+                        <a class="text-light mb-2" href="index.html"><i
+                                class="bi bi-arrow-right text-primary me-2"></i>Home</a>
+                        <a class="text-light mb-2" href="about.html"><i
+                                class="bi bi-arrow-right text-primary me-2"></i>About
+                            Us</a>
+                        <a class="text-light mb-2" href="service.html"><i
+                                class="bi bi-arrow-right text-primary me-2"></i>Services</a>
+                        <a class="text-light mb-2" href="project.html"><i
+                                class="bi bi-arrow-right text-primary me-2"></i>Project</a>
+                        <a class="text-light" href="contact.html"><i
+                                class="bi bi-arrow-right text-primary me-2"></i>Contact Us</a>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-6">
+                    <h3 class="text-white mb-4">Our Services</h3>
+                    <div class="d-flex flex-column justify-content-start">
+                        <a class="text-light mb-2" href="https://www.voice.itsabhinav.tech/"><i
+                                class="bi bi-arrow-right text-primary me-2"></i>Voice ChatBot</a>
+                        <a class="text-light mb-2" href="https://multipledocumentllama2bot-o5ev3xfhwavv3n8ehlemub.streamlit.app"><i
+                                class="bi bi-arrow-right text-primary me-2"></i>ChatDoc AI</a>
+                        <a class="text-light mb-2" href="http://localhost:8501"><i
+                                class="bi bi-arrow-right text-primary me-2"></i>Facial Attendance</a>
+                        <!-- <a class="text-light mb-2" href="appointment.html"><i
+                                class="bi bi-arrow-right text-primary me-2"></i>Plagiarism Checker</a> -->
+                        <!-- <a class="text-light" href="contact.html"><i
+                                class="bi bi-arrow-right text-primary me-2"></i>Contact Us</a> -->
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-6">
+                    <h3 class="text-white mb-4">Reach Us</h3>
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7777.5131607334615!2d77.4951754396043!3d12.923360606664547!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae15eda6d8161d%3A0x9faaaf2f0b625e80!2sRV%20COLLEGE%20OF%20ENGINEERING%2C%20RV%20Vidyaniketan%2C%20Mailasandra%2C%20Bengaluru%2C%20Karnataka%20560059!5e0!3m2!1sen!2sin!4v1690375235185!5m2!1sen!2sin"
+                        width="250" height="250" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid text-light py-4" style="background: #051225;">
+        <div class="container">
+            <div class="row g-0">
+                <div class="col-md-6 text-center text-md-start">
+                    <p class="mb-md-0">&copy; <a class="text-white border-bottom" href="#">RV-Xcelerate</a>.
+                        All Rights Reserved.</p>
+                </div>
+                <div class="col-md-6 text-center text-md-end">
+                    <p class="mb-0">Designed by <a class="text-white border-bottom"
+                            href="https://itsabhinav.tech">Abhinav Dubey</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Footer End -->
+
+
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top pt-2"><i class="bi bi-arrow-up"></i></a>
+
+
+    <!-- JavaScript Libraries -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/counterup/counterup.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+</body>
+
+</html>
